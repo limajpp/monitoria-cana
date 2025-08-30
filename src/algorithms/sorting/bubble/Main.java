@@ -1,4 +1,4 @@
-package sorting.bubble;
+package algorithms.sorting.bubble;
 
 import utils.arrayManipulation.Array;
 import utils.generating.Generator;

@@ -1,4 +1,4 @@
-package sorting.insertion;
+package algorithms.sorting.insertion;
 
 import utils.generating.Generator;
 import utils.printing.Printer;

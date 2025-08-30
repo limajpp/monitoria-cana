@@ -1,4 +1,4 @@
-package sorting.merge;
+package algorithms.sorting.merge;
 
 import utils.generating.Generator;
 import utils.printing.Printer;
