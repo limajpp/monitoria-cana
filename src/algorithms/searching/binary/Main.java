@@ -8,7 +8,7 @@ import java.util.Scanner;
 public class Main {
     public static void main(String[] args) {
         Scanner sc = new Scanner(System.in);
-        int[] array = Generator.generateNoDuplicatesRandomArray(10, 0, 100);
+        int[] array = {1, 2, 3, 4, 5, 6, 7, 8, 9, 10};
         Printer.printArray(array);
 
         Printer.linebreak();
@@ -23,7 +23,7 @@ public class Main {
         }
     }
 
-    private static int search(int[] array, int number) { return search(array, 0, array.length, number); }
+    private static int search(int[] array, int number) { return search(array, 0, array.length - 1, number); }
     private static int search(int[] array, int firstIndex, int lastIndex, int number) {
         while (firstIndex <= lastIndex) {
             int middle = (firstIndex + lastIndex) / 2;
@@ -39,7 +39,7 @@ public class Main {
         return -1;
     }
 
-    private static int recursiveSearch(int[] array, int number) { return recursiveSearch(array, 0, array.length, number); }
+    private static int recursiveSearch(int[] array, int number) { return recursiveSearch(array, 0, array.length - 1, number); }
     private static int recursiveSearch(int[] array, int firstIndex, int lastIndex, int number) {
         if (lastIndex >= firstIndex) {
             int middle = firstIndex + (lastIndex - firstIndex) / 2;
