@@ -7,7 +7,7 @@ import utils.printing.Printer;
 public class Main {
     public static void main(String[] args) {
         System.out.println("Array antes da ordenação:");
-        int[] array = Generator.generateNoDuplicatesRandomArray(10, 0, 100);
+        int[] array = Generator.generateNoDuplicatesRandomArray(5, 0, 100);
         Printer.printArray(array);
 
         Printer.linebreak();
